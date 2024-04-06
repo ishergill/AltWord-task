@@ -116,7 +116,7 @@ function JobProfile() {
             </div>
             <div className="JobProfile__top__item">
               <p>Assignment End at</p>
-              <p>{formatDate(assignmentData.ends_at)}</p>
+              <p>{formatDate(Number(assignmentData.ends_at))}</p>
             </div>
             <div className="JobProfile__top__btns">
               {btns.map((btn) => (
