@@ -64,8 +64,11 @@ input[type="checkbox"] {
   accent-color: #000;
 }
 
-main{
-padding: 3rem;
-display: flex;
-gap: 2rem;
+main {
+  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  @include respond(phone-med) {
+    flex-direction: column;
+  }
 }
