@@ -1,0 +1,104 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 15%;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0.8;
+
+    img {
+      height: 2rem;
+      width: auto;
+    }
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  &__divider {
+    height: 0.1rem;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(248, 249, 250, 1) 0%,
+      rgba(8, 8, 8, 1) 51%,
+      rgba(248, 249, 250, 1) 100%
+    );
+    opacity: 0.6;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    &__icon {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      // box-shadow: 1px 1px 1px .5px rgb(0 0 0 / 10%);
+      img {
+        height: 1.6rem;
+        width: auto;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+  }
+  &__card {
+    background: #4fd1c5;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 1rem;
+
+    &__add {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 0.8rem;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      img {
+        height: 1.2rem;
+        width: auto;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      h3 {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      p {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+      }
+    }
+  }
+  button {
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #444f5c;
+    cursor: pointer;
+  }
+}

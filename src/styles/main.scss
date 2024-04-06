@@ -1,0 +1,12 @@
+// !base
+@import "./mediaManger";
+@import "./base";
+
+// !container
+@import "./containers/left";
+@import "./containers/right";
+@import "./containers/JobProfile";
+@import "./containers/UserProfile";
+
+// !componets
+@import "./components/loading"

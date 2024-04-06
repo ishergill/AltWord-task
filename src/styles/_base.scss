@@ -1,0 +1,71 @@
+body {
+  background: #f8f9fa;
+  margin: 0;
+  cursor: default;
+  font-family: Poppins;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px% = 62.5
+
+  @include respond(big-desk) {
+    //width < 1200px ?
+    font-size: 75%; // 1rem = 12px; 9/16% = 75%
+  }
+
+  @include respond(tab-land) {
+    //width < 1200px ?
+    font-size: 56.25%; // 1rem = 9px; 9/16% = 56.25%
+  }
+
+  @include respond(tab-pot) {
+    //width < 900px ?
+    font-size: 50%; // 1rem = 8px; 8/16% = 50%
+  }
+
+  @include respond(phone-med) {
+    //width < 900px ?
+    font-size: 40%; // 1rem = 7px; 7/16% = 43.75%
+  }
+  @include respond(phone) {
+    //width < 900px ?
+    font-size: 43.75%; // 1rem = 7px; 7/16% = 43.75%
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+img,
+span,
+button,
+a {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input[type="checkbox"] {
+  accent-color: #000;
+}
+
+main{
+padding: 3rem;
+display: flex;
+gap: 2rem;
+}
